@@ -7,11 +7,12 @@
     font-size: 50px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+   /* font-family: 'Nunito', sans-serif;*/
+    font-family: Arial, sans-serif;
     text-decoration: none;
 }
 
@@ -22,7 +23,7 @@
     --color-black-1: #212b38;
     --color-primary: #0073ff;  
 }
-
+ /* Comienzo del Banner*/
 header{
     width: 100%;
     height: 60px;
@@ -96,10 +97,59 @@ header{
     width: 150px;
     padding: 10px;
   }
+/*Fin del Banner*/
+
+/*Comienzo del cuerpo de la Pagina*/
+.container-pri {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.img-port {
+    text-align: center;
+}
+.imgg {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+h1 {
+    margin: 18.76px 0px;
+    font-size: 28px;
+    color: #333;
+}
+h2 {
+    margin: 19.92px 0px;
+    font-size: 24px;
+    color: #333;
+}
+h3 {
+    margin: 20px;
+    font-size: 20px;
+    color: #333;
+}
+p {
+    margin: 18px 0px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/*Fin del cuerpo de Pagina*/
+/* Inicio del Exhibidor de recomendaciones */
 
 .cover{
     width: 100%;
-    height: 500px;
+    height: 0px;
     background: var(--color-esqueleto);
     margin-top: 20px;
 }
@@ -116,22 +166,32 @@ header{
 
 .container__article .box__article{
     width: 200px;
-    height: 250px;
+    height: 300px;
     background: var(--color-esqueleto);
     margin: 20px;
 }
 
-/*Aquí debajo va el FOOTER*/
+.cel-1 {
+    width: 200px;
+    height: 300px;
+    transition: transform 0.3s; 
+}
+
+.cel-1:hover {
+    transform: scale(1.15); 
+}
+/* Fin del Exhibidor de recomendaciones */
+/*Inicio del FOOTER*/
 
 footer{
     width: 100%;
     padding: 50px 0px;
     background-image: url(../Images/background-footer.svg);
     background-size: cover;
-    
- /*   background-color: var(--color-black);
-    -webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
+    /*
+    background-color: var(--color-black);
+    -webkit-mask-image: url("Images/background-footer.svg");
+    mask-image: url("Images/background-footer.svg");
     -webkit-mask-size: cover;
     mask-size: cover; */
 }
@@ -200,3 +260,5 @@ footer{
     height: 1px;
     background-color: #7a7a7a;
 }
+
+/*Fin del FOOTER*/
