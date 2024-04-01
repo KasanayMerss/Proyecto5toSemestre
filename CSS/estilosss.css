@@ -106,7 +106,7 @@ header{
     padding: 0;
     background-color: #f9f9f9;
 }
-.container {
+.contenedor-principal {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -117,6 +117,8 @@ header{
     text-align: center;
 }
 .imgg {
+    width: 400px;
+    height: 200px;
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
