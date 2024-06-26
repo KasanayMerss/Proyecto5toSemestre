@@ -1,17 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-
-
-
-.tet {
-    text-align: center;
-    font-size: 50px;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   /* font-family: 'Nunito', sans-serif;*/
     font-family: Arial, sans-serif;
     text-decoration: none;
 }
@@ -25,21 +15,26 @@
 }
  /* Comienzo del Banner*/
 header{
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    z-index: 10;
     width: 100%;
-    height: 60px;
+    height: 3.75em;
     background: var(--color-esqueleto);
 }
 
 li {
-    margin-left: 25px;
+    margin-left: 1.56em;
 }
+
 
 .logo-a{
     color: var(--color-white);
 }
 .logo {
     color: var(--color-white);
-    font-size: 30px;
+    font-size: 1.88em;
   } 
 .logo span {
     color: var(--color-primary);
@@ -47,7 +42,7 @@ li {
   
   .menu-bar {
     background-color: var(--color-black);
-    height: 80px;
+    height: 5em;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -62,12 +57,12 @@ li {
   }
   
 .menu-bar ul li {
-    padding: 10px 30px;
+    padding: 0.63em 1.88em;
     position: relative;
   }
   
 .menu-bar ul li a {
-    font-size: 20px;
+    font-size: 1.25em;
     color: var(--color-white);
     text-decoration: none;
     transition: all 0.3s;
@@ -79,8 +74,8 @@ li {
 
 .fas {
     float: right;
-    margin-left: 10px;
-    padding-top: 3px;
+    margin-left: 0.63em;
+    padding-top: 0.19em;
   }
 
 .dropdown-menu {
@@ -97,12 +92,12 @@ li {
   
 .menu-bar ul li:hover .dropdown-menu ul {
     display: block;
-    margin: 10px;
+    margin: 0.63em;
   }
   
 .menu-bar ul li:hover .dropdown-menu ul li {
-    width: 150px;
-    padding: 10px;
+    width: 9.38rem;
+    padding: 0.63em;
   }
 /*Fin del Banner*/
 
@@ -114,11 +109,12 @@ li {
     background-color: #f9f9f9;
 }
 .contenedor-principal {
-    max-width: 900px;
+    max-width: 56.3em;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.3em;
+    margin-top: 3.13em;
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.13em 1.3em -0.31em rgba(0,0,0,0.5);
 }
 /* Pagina Principal cuerpo*/
 
@@ -138,22 +134,22 @@ body,html{
      align-items: center;
      justify-content: center;
      background-color: #fff;
-     border-radius: 10px;
-     padding: 40px;
-     width: 650px;
+     border-radius: 0.63em;
+     padding: 2.5em;
+     width: 40.63em;
      position: relative;
      overflow: hidden;
-     box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+     box-shadow: 0 0.13em 1.3em -0.31em rgba(0,0,0,0.5);
  }
   
  .user-card:before {
     content: '';
     position: absolute;
     height: 300%;
-    width: 173px;
+    width: 10.48em;
     background: var(--color-black);
-    top: -60px;
-    left: -125px;
+    top: -3.8em;
+    left: -7.82em;
     z-index: 0;
     transform: rotate(17deg);
   }
@@ -166,8 +162,8 @@ body,html{
   }
   
   .user-card-img img {
-    width: 200px;
-    height: 300px;
+    width: 12.5em;
+    height: 18.8em;
     object-fit: cover;
   }
   
@@ -176,19 +172,19 @@ body,html{
   }
   
   .user-card-info h2 {
-    font-size: 24px;
+    font-size: 1.5em;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.63em;
     font-family: 'Bebas Neue', sans-serif;
   }
   
   .user-card-info p {
-    font-size: 14px;
-    margin-bottom: 2px;
+    font-size: 0.88em;
+    margin-bottom: 0.13em;
   }
   .user-card-info p span {
      font-weight: 700;
-     margin-right: 10px;
+     margin-right: 0.63em;
  }
   @media only screen and (min-width: 768px) {
     .user-card {
@@ -224,39 +220,56 @@ body,html{
        font-size: 18px;
     }
   }
-   
+
+  @media (max-width: 767px){
+    header {
+      font-size: 8px;
+    }
+
+  }
+
+  @media (max-width: 767px){
+    footer {
+      font-size: 4px;
+    }
+
+    .menu-bar {
+      font-size: 6px;
+    }
+  }
 
 .img-port {
     text-align: center;
 }
 .imgg {
-    width: 400px;
-    height: 200px;
+    width: 25em;
+    height: 12.5em;
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 
 }
 h1 {
-    margin: 18.76px 0px;
-    font-size: 28px;
+    margin: 1.14em 0em;
+    font-size: 1.75em;
     color: #333;
 }
 h2 {
-    margin: 19.92px 0px;
-    font-size: 24px;
+    margin: 1.3em 0em;
+    font-size: 1.5em;
     color: #333;
 }
 h3 {
-    margin: 20px;
-    font-size: 20px;
+    margin: 1.25em;
+    font-size: 1.25em;
     color: #333;
 }
 p {
-    margin: 18px 0px;
-    font-size: 18px;
+    margin: 1.13em 0px;
+    font-size: 1.13em;
     line-height: 1.6;
     color: #666;
+    text-align: justify;
 }
 
 /*Fin del cuerpo de Pagina*/
@@ -276,7 +289,7 @@ p {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;;
 }
 
 .container__article .box__article{
@@ -308,7 +321,7 @@ p {
 
 footer{
     width: 100%;
-    padding: 50px 0px;
+    padding: 3.13em 0px;
   background-image: url(../Images/background-footer.svg);
  background-size: cover;
  
@@ -318,40 +331,39 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 75em;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 6.25em;
 }
 
 .box__footer{
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 2.5em;
 }
 
 .box__footer .logo img{
-    width: 180px;
+    width: 11.3em;
 }
 
 .box__footer .terms{
     color: var(--color-white);
-    max-width: 350px;
-    margin-top: 20px;
+    max-width: 21.9em;
+    margin-top: 1.3em;
     font-weight: 500;
     color: #7a7a7a;
-    font-size: 18px;
+    font-size: 1.13em;
 }
 
 .box__footer h2{
     color: var(--color-white);
-    margin-bottom: 30px;
-    
+    margin-bottom: 1.88em;
     font-weight: 700;
 }
 
 .box__footer a{
     color: var(--color-white);
-    margin-top: 10px;
+    margin-top: 0.63em;
     font-weight: 600;
 }
 
@@ -359,30 +371,40 @@ footer{
     opacity: 0.8;
 }
 
+.terms p{
+  color: var(--color-white);
+  margin-top: 0.63em;
+}
 .box__footer a .fab{
     color: var(--color-white);
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .box__copyright{
     color: var(--color-white);
-    max-width: 1200px;
+    max-width: 75em;
     margin: auto;
     text-align: center;
-    padding: 0px 40px;
+    padding: 0em 2.5em;
 }
 
 .box__copyright p{
     color: var(--color-white);
-    margin-top: 20px;
+    margin-top: 1.25em;
     color: #7a7a7a;
+    text-align: center;
 }
 
 .box__copyright hr{
     color: var(--color-white);
     border: none;
-    height: 1px;
+    height: 0.066em;
     background-color: #7a7a7a;
+}
+
+.tet {
+  text-align: center;
+  font-size: 3.13em;
 }
 
 /*Fin del FOOTER*/
