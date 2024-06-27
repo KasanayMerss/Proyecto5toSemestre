@@ -326,16 +326,15 @@ p {
 /*Inicio del FOOTER*/
 
 footer{
-  position: absolute;
   bottom: 0;
-  width: 100%;
   padding: 3.13em 0px;
   background-image: url(../Images/background-footer.svg);
  background-size: cover;
- 
 }
 
 .container__footer{
+  
+  width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
